@@ -6,7 +6,11 @@ project(CarParkingSystem VERSION 1.0)
 # 添加可执行文件
 add_executable(CarParkingSystem 
     main.cpp  # 主程序源文件，你需要将其替换为你实际的源文件
- "Car.h" "Car.cpp")
+    Car.h
+    Car.cpp
+    CarPark.h
+    CarPark.cpp
+)
 
 # 如果有其他源文件需要添加，可以使用类似的方式
 # add_executable(CarParkingSystem 
