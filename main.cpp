@@ -8,6 +8,8 @@ void processExit();
 void checkAvailable();
 void exitProgram();
 
+extern CarPark parkA(256);
+
 int main() {
     int choice;
 
@@ -49,6 +51,8 @@ void processEntry() {
     cin >> carId;
     cout << "车辆进入，车牌号为：" << carId << endl;
     // 进行车辆进入操作
+    Car car(carId);
+    parkA.carEntry(car);
 }
 
 void processExit() {
@@ -57,11 +61,14 @@ void processExit() {
     cin >> carId;
     cout << "车辆驶出，车牌号为：" << carId << endl;
     // 进行车辆驶出操作
+    Car car(carId);
+    parkA.carExiting(car);
 }
 
 void checkAvailable() {
     cout << "查询空位" << endl;
     // 进行查询空位操作
+    cout << "剩余空位" << parkA.getRemainParkingSpace() << endl;
 }
 
 void exitProgram() {
