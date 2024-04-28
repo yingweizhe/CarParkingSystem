@@ -1,4 +1,5 @@
 #include "CarPark.h"
+#include <algorithm>
 
 CarPark::CarPark(int capacity) : capacity_(capacity) {
     insideCars_.clear();
