@@ -14,7 +14,7 @@ int main() {
     int choice;
 
     while (true) {
-        cout << "请选择操作：" << endl;
+        cout << "请选择操作：当前车位空余："<< parkA.getRemainParkingSpace() << endl;
         cout << "1. 车辆进入" << endl;
         cout << "2. 车辆驶出" << endl;
         cout << "3. 查询空位" << endl;
